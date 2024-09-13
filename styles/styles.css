@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --emerald: #50C878;
+  --black: #0D0D0D;
+  --white: #F5F5F5;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--emerald);
+}
+
+header {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+header span {
+  color: var(--white);
+  font-size: 25px;
+  margin-right: 70vh;
+  margin-top: 15px;
+}
+header h5 {
+  margin-top: 15px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+header .toggler {
+  width: 50px;
+  height: 50px;
+  margin-left: 20vh;
+  border-radius: 50%;
+  background: conic-gradient(var(--emerald) 0deg 180deg, var(--white) 180deg 360deg);
+}
+
+main {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: var(--black);
+}
+main .hero {
+  display: flex;
+  flex-direction: row;
+}
+main .hero .avatar {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #50C878;
+}
+main .hero .avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 80px;
+}
+main .hero .info p {
+  font-size: 18px;
+  color: var(--white);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main .hero .info p span {
+  color: var(--emerald);
+  font-weight: bold;
+}
+main .about {
+  padding: 50px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+main .about .about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .about .about-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--emerald);
+}
+main .about .about-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+main .about .skill-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+main .about .skill-container .skill-card {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--emerald);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+main .about .skill-container .skill-card .skill-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+main .about .skill-container .skill-card .skill-circle svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+main .about .skill-container .skill-card .skill-circle svg .background {
+  fill: none;
+  stroke: var(--black);
+  stroke-width: 10;
+}
+main .about .skill-container .skill-card .skill-circle svg .progress {
+  fill: none;
+  stroke: var(--emerald);
+  stroke-width: 10;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  transition: stroke-dashoffset 1s;
+}
+main .about .skill-container .skill-card .skill-circle .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+main .about .skill-container .skill-card[data-percentage] .skill-circle .progress {
+  stroke-dashoffset: calc(283 - 283 * attr(data-percentage) / 100);
+}
+main .projects {
+  padding: 50px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+main .projects .projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .projects .projects-container h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--emerald);
+}
+main .projects .projects-container .project-card {
+  background-color: var(--black);
+  border: 2px solid var(--emerald);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  transition: background-color 0.3s, transform 0.3s;
+}
+main .projects .projects-container .project-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+main .projects .projects-container .project-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+main .projects .projects-container .project-card a {
+  color: var(--emerald);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+main .contact {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+main .contact .contact-form,
+main .contact .contact-details {
+  background-color: var(--black);
+  border: 2px solid var(--emerald);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+main .contact .contact-form h2,
+main .contact .contact-details h2 {
+  color: var(--emerald);
+  margin-bottom: 20px;
+}
+main .contact .contact-form form,
+main .contact .contact-details form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .contact .contact-form form label,
+main .contact .contact-details form label {
+  font-size: 16px;
+  font-weight: bold;
+}
+main .contact .contact-form form input,
+main .contact .contact-form form textarea,
+main .contact .contact-details form input,
+main .contact .contact-details form textarea {
+  background-color: white;
+  color: black;
+  border: 2px solid var(--emerald);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+main .contact .contact-form form button,
+main .contact .contact-details form button {
+  background-color: var(--emerald);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .contact .contact-form form button:hover,
+main .contact .contact-details form button:hover {
+  background-color: #48B46C;
+}
+main .contact .contact-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+main .contact .contact-details .social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+main .contact .contact-details .social-media a {
+  color: var(--emerald);
+  text-decoration: none;
+  font-size: 16px;
+}
+main .contact .contact-details .social-media a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer .images img {
+  width: 50px;
+  margin: 30px;
+  cursor: pointer;
+}
+footer p {
+  color: var(--white);
+}
+
+/* Add a light theme for when the toggle button is clicked */
+body.dark-theme {
+  --emerald: #FF69B4; /* Hot Pink */
+  --black: #FFFFFF; /* White */
+  --white: #000000; /* Black */
+}
+
+body.dark-theme {
+  background-color: var(--black);
+  color: var(--emerald);
+}
+
+body.dark-theme header .toggler {
+  background: conic-gradient(var(--emerald) 0deg 180deg, var(--white) 180deg 360deg);
+}/*# sourceMappingURL=styles.css.map */

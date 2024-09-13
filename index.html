@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <span>DJIATSA DUNAMIS</span>
+        <h5 data-target="hero">Home</h5>
+        <h5 data-target="about">About</h5>
+        <h5 data-target="projects">Projects</h5>
+        <h5 data-target="blog">Blog</h5>
+        <h5 data-target="contact">Contact</h5>
+        <div class="toggler">
+            <!-- To toggle between light and dark mode -->
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <!-- Section for the hero page -->
+            <div class="avatar">
+                <img src="assets/profile.jpg" alt="">
+            </div>
+            <div class="info">
+                <p>Hello, I'm <span>Djiatsa Dunamis</span>, a passionate <span>Software Engineer</span> specializing in creating
+                intuitive high-performance applications.</p>
+                <p>With a strong background in <span>Java, Flutter, Python and Javascript,</span> I thrive on turning complex challenges
+                into elegant user-friendly solutions.</p>
+                <p>My work blends technical expertise with a keen eye for design, crafting experiences that not only function flawlessly
+                but also stand out visually.</p>
+                <p>Let's build something great together.</p>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm <span class="name">Djiatsa Dunamis</span>, a dedicated <span class="profession">Software Engineer</span> with a passion for developing innovative and efficient software solutions. Here are some of my skills and experience levels in various programming languages:
+                </p>
+                <div class="skill-container">
+                    <!-- Existing skill cards -->
+                    <div class="skill-card" data-skill="Java" data-percentage="85">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="background" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="percentage">85%</div>
+                        </div>
+                        <h3>Java</h3>
+                        <p>Experienced in Java, focusing on enterprise applications and backend development.</p>
+                    </div>
+                    <div class="skill-card" data-skill="Flutter" data-percentage="75">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="background" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="percentage">75%</div>
+                        </div>
+                        <h3>Flutter</h3>
+                        <p>Proficient in building cross-platform mobile applications with Flutter.</p>
+                    </div>
+                    <div class="skill-card" data-skill="Python" data-percentage="90">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="background" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="percentage">90%</div>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Strong experience with Python, particularly in data analysis and machine learning.</p>
+                    </div>
+                    <div class="skill-card" data-skill="JavaScript" data-percentage="80">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="background" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Experienced in JavaScript for web development and creating dynamic user interfaces.</p>
+                    </div>
+                    <!-- New skill card for C++ -->
+                    <div class="skill-card" data-skill="C++" data-percentage="55">
+                        <div class="skill-circle">
+                            <svg>
+                                <circle class="background" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="percentage">55%</div>
+                        </div>
+                        <h3>C++</h3>
+                        <p>Intermediate experience with C++, focusing on performance optimization and system programming.</p>
+                    </div>
+                </div>
+            </div>
+        </section>                
+        <section id="projects" class="projects">
+            <div class="projects-container">
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <h3>Portfolio</h3>
+                    <p>A personal portfolio website using Html Css and JavaScript, to reach out to possible employers.</p>
+                    <a href="#" class="project-link">Learn More</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>        
+        <section id="blog" class="blog"></section>
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Contact Me</h2>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-details">
+                    <h2>Contact Details</h2>
+                    <p>Email: <a href="https://dunamisjunior15@gmail.com">dunamisjunior15@gmail.com</a></p>
+                    <p>Phone: +237 681 811 825</p>
+                    <div class="social-media">
+                        <a href="https://x.com/DunamisJun66166" target="_blank">Twitter</a>
+                        <a href="https://www.linkedin.com/in/dunamis-junior-26b6232bb/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Strife-cyber/" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <div class="images">
+            <a href="https://www.linkedin.com/in/dunamis-junior-26b6232bb/">
+                <img src="assets/images/1.png" alt="">
+            </a>
+            <a href="https://google.com">
+                <img src="assets/images/2.png" alt="">
+            </a>
+            <a href="https://github.com/Strife-cyber/">
+                <img src="assets/images/4.png" alt="">
+            </a>
+            <a href="https://x.com/DunamisJun66166">
+                <img src="assets/images/5.jpg" alt="">
+            </a>
+        </div>
+        <p>All rights reserved. Djiatsa Dunamis Junior</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
